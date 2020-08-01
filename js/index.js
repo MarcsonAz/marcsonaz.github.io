@@ -1,10 +1,9 @@
 /// vars
-const seq = ['primeiro', 'segundo', 'terceiro', 'quarto', 'quinto', 'sexto', 'setimo']
+const seq = ['primeiro', 'segundo', 'terceiro', 'quarto', 'quinto', 'sexto', 'setimo','oitavo']
 const mesDoAno = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 
                   'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
-const summaryUrl = 'https://api.covid19api.com/summary'
+const summaryUrl = 'https://covid19-brazil-api.now.sh/api/report/v1/countries'
 const baseUrl = 'https://api.covid19api.com/total/country/'
-
 
 // FUNCOES PARA TRATAR E APLICAR OS DADOS
 var array = []
@@ -21,7 +20,7 @@ var found, index, card, obj, remover = ['primeiro'], iniciocontagem = 1000
 
 // FUNCOES PARA CARREGAR OS DADOS
 var tmp, tmp2, tmp3, tmp4, tmp5
-var url, countryCards = 7
+var url, countryCards = 8
 
 
 //const dailyCountries = ['brazil','italy','spain','india']
@@ -41,8 +40,22 @@ async function fetchApi(endpoint) {
     return data
 }
 
+async function fetchApi2(endpoint) {
+    const res = await fetch(endpoint, 
+        { "method": "GET",
+          "headers": {
+		    "x-rapidapi-host": "covid-193.p.rapidapi.com",
+		    "x-rapidapi-key": "e960454638msh45bb494a31aecfbp10aeddjsn513ddcf6ba68"
+	        }
+        }
+    )
+    const data = await res.json()
+    return data.response
+}
+
+
 function addLetal(obj) {
-    obj['letal'] = (obj.TotalDeaths / obj.TotalConfirmed * 100).toFixed(2) + '%'
+    obj['letal'] = (obj.deaths / obj.confirmed * 100).toFixed(2) + '%'
     return obj
 }
 
@@ -143,12 +156,12 @@ function filterdaily(data,vars,afterN) {
     return newArray
 };
 
-function topCasos(dados,n) { // fixado n = 7 
+function topCasos(dados,n) { // fixado n = 8
     let newArray = []
     dados.forEach(function(obj) {
             newArray.push(obj)
             if (newArray.length > n) {
-                newArray.sort(function(a, b) { return b.TotalConfirmed - a.TotalConfirmed })
+                newArray.sort(function(a, b) { return b.confirmed - a.confirmed })
                 newArray.pop()
             }
         })
@@ -161,17 +174,16 @@ function topCasos(dados,n) { // fixado n = 7
 function showCard(array) {
     array.forEach(obj => {
         obj = addLetal(obj)
-        if (obj.order !== 'global') { // pois Global nao tem o nome na base
-            card = document.getElementById(obj.order)
-            card.textContent = obj.Country
-        }
-        
+        //console.log(obj)
+        card = document.getElementById(obj.order)
+        card.textContent = obj.country
+
         card = document.getElementById(obj.order + 'casos')
         card.className += "float-right";
-        card.textContent = obj.TotalConfirmed.toLocaleString()
+        card.textContent = obj.confirmed.toLocaleString()
         card = document.getElementById(obj.order + 'mortes')
         card.className += "float-right";
-        card.textContent = obj.TotalDeaths.toLocaleString()
+        card.textContent = obj.deaths.toLocaleString()
         card = document.getElementById(obj.order + 'letal')
         card.className += "float-right";
         card.textContent = obj.letal
@@ -283,31 +295,37 @@ function dailyPlot(data) {
 async function main() {
     let response, data, graficoData = [], CardsInfo = []
 
-    // GET the list of basic, daily, light Country data
     response = await fetchApi(summaryUrl)
 
-    // filtrar top 7 em casos e aribuir ordem
-    let CountriesInfo = topCasos(response.Countries,n = countryCards)
+    // filtrar top 8 em casos e aribuir ordem
+    let CountriesInfo = topCasos(response.data,n = countryCards)
     CardsInfo.push(...CountriesInfo)
     
-    // add global
-    response.Global['order'] = 'global'
-    CardsInfo.push(response.Global)
+    //showCard() printar cards
+    showCard(CardsInfo) // 8 paises com mais casos
     
-    //showCard() printar card
-    showCard(CardsInfo) // global + 7 paises com mais casos
-    
+
+    /*  -----------------  TESTE RAPIDAPI -------------------------  */ 
+
+    response = await fetchApi2(newUrl)
+    console.log(response)
+    //let CountriesInfo = topCasos(response,n = countryCards)
+    //CardsInfo.push(...CountriesInfo)
+    //showCard(CardsInfo)
+
+    /*  -----------------  TESTE RAPIDAPI -------------------------  */ 
+
     // Carregar dados do grafico de forma lenta
-    data = await dadosGrafico(CountriesInfo) 
+    //data = await dadosGrafico(CountriesInfo) 
     
     /// 4 Graficos: 
     // Casos acumulados nos 7 paises por data
     
-    fullPlot(data) 
+    //fullPlot(data) 
     // Country, Confirmed, Date
 
     // Casos acumulados nos 7 paises a partir de 1000 casos acumulados
-    comparedPlot(data)
+    //comparedPlot(data)
 
     // Casos diarios nos 7 paises por data
     // Mortes diarias nos 7 paises por data
