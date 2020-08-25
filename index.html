@@ -3,15 +3,26 @@
 <head>
 
 <!-- load libraries -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+crossorigin="anonymous"></script>
+
+<script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+
 <script src="js/index.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/plotly-latest.min.js"></script>
-
 <link rel="stylesheet" href="css/style.css">
-
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/bootstrap.min.js"></script>
 
 </head>
 
@@ -25,28 +36,10 @@
 
 
 <div class="container">
-    <h5 class="display-8 mt-3 mb-3">Estado da Doença no Mundo, no Brasil e em Países com mais Casos Confirmados:</h5>
+    <h5 class="display-8 mt-3 mb-3">Estado da Doença em Países com mais Casos Confirmados:</h5>
     <div class="row mt-3 mb-3">
         <div class="col">
-        <div class="card-deck">  <!--
-            <div class="card"> 
-              <div class="card-body">
-                <p id="global" class="card-title">Global</p>
-                <a id="globalcasos">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Casos Confirmados:</p>
-                <a id="globalmortes">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Mortes:</p>
-                  <a id="globalletal">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Crescimento diário:</p>                  
-              </div>
-            </div> -->
-
+        <div class="card-deck"> 
             <div class="card border-success">
               <div class="card-body">
                 <p id="primeiro" class="card-title">primeiro</p>
@@ -206,18 +199,6 @@
 <!-- Graficos -->
     <div class="wrapper">
         <div id="tester1" style="width:840px;height:420px;"></div>
-    </div>
-
-    <div class="col-md-4 col-md-offset-2">
-      <div id="tester2" style="width:840px;height:420px;"></div>
-    </div>
-
-    <div class="col-md-4 col-md-offset-2">
-      <div id="tester3" style="width:840px;height:420px;"></div>
-    </div>
-
-    <div class="col-md-4 col-md-offset-2">
-      <div id="tester4" style="width:840px;height:420px;"></div>
     </div>
 <!--
 <a>         OBS: Estados Unidos removido, pois a distancia entre o numero de casos atrapalharia a visualizacao dos dados. </a> -->
