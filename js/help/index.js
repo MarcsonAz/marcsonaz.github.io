@@ -7,6 +7,33 @@ const clean = obj => {
     return {Country,Confirmed,Deaths,Date}
 }
 
+
+function ApplySum(sum) {
+    let temp, saida = 0, n = sum.length
+    if(n >= diasmm) { 
+        temp = sum.splice(n-diasmm)
+        temp.forEach(num => saida += num)
+        return saida
+    }
+    sum.forEach(num => saida += num)
+    return saida
+}
+
+function applyMean(data) {
+    // substituir dados de casos diarios por dados da media
+    // dos ultimos sete dias
+    let mean = 0, sum = [], cont = 1, newArray = []
+    newArray[0] = {'Country': 'Média Quinzenal' }
+    for(let i=0;i<data.length;i++) {
+        sum.push(data[i].Confirmed)
+        mean = cont > diasmm ? ApplySum(sum) / diasmm : ApplySum(sum) / cont
+        newArray.push({ 'Confirmed' : Math.round(mean),
+                        'Date'      : data[i].Date})
+        cont++                        
+    }
+    return newArray
+}
+
 const baseUrl = 'https://api.covid19api.com/country/'
 const seq = ['global', 'primeiro', 'segundo', 'terceiro', 'quarto', 'quinto', 'sexto', 'setimo']
 

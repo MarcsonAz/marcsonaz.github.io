@@ -20,6 +20,7 @@ integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+
 crossorigin="anonymous"></script>
 
 <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <script src="js/index.js"></script>
 <link rel="stylesheet" href="css/style.css">
@@ -37,7 +38,7 @@ crossorigin="anonymous"></script>
 
 <div class="container">
     <h5 class="display-8 mt-3 mb-3">Estado da Doença em Países com mais Casos Confirmados:</h5>
-    <div class="row mt-3 mb-3">
+    <div id='linhacard' class="row mt-3 mb-3">
         <div class="col">
         <div class="card-deck"> 
             <div class="card border-success">
@@ -116,7 +117,7 @@ crossorigin="anonymous"></script>
       </div>
 
   <!--  segunda linha -->
-  <div class="row mt-3 mb-3">
+  <div id='linhacard' class="row mt-3 mb-3">
     <div class="col">
       <div class="card-deck">
            <div class="card border-warning">
@@ -198,7 +199,7 @@ crossorigin="anonymous"></script>
 
 <!-- Graficos -->
     <div class="wrapper">
-        <div id="tester1" style="width:840px;height:420px;"></div>
+        <div id="tester1" style="width:840px;height:450px;"></div>
     </div>
 <!--
 <a>         OBS: Estados Unidos removido, pois a distancia entre o numero de casos atrapalharia a visualizacao dos dados. </a> -->
@@ -210,7 +211,10 @@ crossorigin="anonymous"></script>
 <footer>
   <div class="container">
   <ul>
-    <a> Fonte: </a>
+    <a> Desenvolvimento: </a>
+    <a href="https://github.com/MarcsonAz">MarcsonAz</a>
+    <br>
+    <a> Fonte dos dados: </a>
     <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#6fbc46d6-0ddf-400b-a743-a149e9bba381"> Coronavirus COVID19 API </a>
   </ul>
 
