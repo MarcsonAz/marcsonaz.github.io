@@ -5,6 +5,10 @@
 
 ##### usando a API: [Covid19 Brazil API](https://covid19-brazil-api-docs.now.sh/)
 
-##### Estou treinando Front, HTML, CSS c/ Bootstrap e JS c/ Jquery e Plotly.js
+##### Aprendendo back-end: Node (express, postegresql) e Python (Flask, fastapi, Django)
+
+##### Estou treinando Front, HTML, CSS (Bootstrap) e JS vanilla (Plotly.js)
+
+
 
 
