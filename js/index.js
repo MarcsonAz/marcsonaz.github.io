@@ -145,6 +145,17 @@ function toDaily(array) {
     }
     return newArray
 }
+
+function MA(array) {
+    /// editar somente o array.y
+    /// media movel de 7 dias
+    /// pegar length (> 7)
+    /// vou precisar de alguns testes
+    // 1 ideia
+    // fazer de extremo e testar NA ou 0 no inicio
+    return newArray
+}
+
 /// End of Helper functions
 
 
@@ -157,10 +168,13 @@ function dailyPlot(data) {
     
     let newArray = []
     newArray.push(prepTrace(data, 'Data', 3))
-
-    // edit layout
+    // mean average
+    // let newArray2 = []
+    //newArray2.push(prepTrace(data, 'Data', 4))
+    //let ma = MA(newarray);
+    
     var layout = {
-        title: ` Casos diários da Pandemia de COVID-19 no Brasil a partir de 15 de Março`,
+        title: `Casos diários da Pandemia de COVID-19 no Brasil a partir de 15 de Março de 2020`,
         annotations: [
           {
             xref: 'paper',
