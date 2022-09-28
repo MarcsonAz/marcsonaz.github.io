@@ -1,224 +1,136 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-<!-- load libraries -->
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
-crossorigin="anonymous"></script>
-
-<link rel="stylesheet" 
-href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-crossorigin="anonymous"></script>
-
-<script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-<script src="js/index.js"></script>
-<link rel="stylesheet" href="css/style.css">
-
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+	<meta name="author" content="Hassan Ali">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+				<a href="http://medium.com/@hassanhelfi/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-medium"></i>
+					</span>
+				</a>
+				<a href="http://github.com/helfi92" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a href="https://twitter.com/hassanhelfi" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-twitter"></i>
+					</span>
+				</a>				
+			</div>
 
-<body>
-<!-- header -->
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">SMARTEAGLE  --  Painel Covid-19</a>
-  </nav>
-    
-<!-- Cards -->
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
 
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/profile.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					Lorem Khaled Ipsum is a major key to success. To succeed you must believe. When you believe, you will succeed. Mogul talk. Find peace, life is like a water fall, you’ve gotta flow. Lion! Fan luv. Eliptical talk.
+				</p>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/project-1.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										They don’t want us to eat. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/project-2.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Bless up. Another one. How’s business? Boomin. Don’t ever play yourself. Life is what you make it, so let’s make it.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-<div class="container">
-    <h5 class="display-8 mt-3 mb-3">Estado da Doença em Países com mais Casos Confirmados:</h5>
-    <div id='linhacard' class="row mt-3 mb-3">
-        <div class="col">
-        <div class="card-deck"> 
-            <div class="card border-success">
-              <div class="card-body">
-                <p id="primeiro" class="card-title">primeiro</p>
-                <a id="primeirocasos">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Casos Confirmados:</p>
-                <a id="primeiromortes">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Mortes:</p>
-                  <a id="primeiroletal">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Letalidade:</p>                  
-              </div>
-            </div>
-
-            <div class="card border-primary">
-              <div class="card-body">
-                <p id="segundo" class="card-title">segundo</p>
-                <a id="segundocasos">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Casos Confirmados:</p>
-                <a id="segundomortes">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Mortes:</p>
-                  <a id="segundoletal">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Letalidade:</p>                  
-              </div>
-            </div>
-
-            <div class="card border-secondary">
-              <div class="card-body">
-                <p id="terceiro" class="card-title">terceiro</p>
-                <a id="terceirocasos">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Casos Confirmados:</p>
-                <a id="terceiromortes">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Mortes:</p>
-                  <a id="terceiroletal">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Letalidade:</p>                  
-              </div>
-            </div>
-            <div class="card border-info">
-              <div class="card-body">
-                  <p id="quarto" class="card-title">quarto</p>
-                  <a id="quartocasos">
-                    <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                  </a>
-                  <p class="card-text">Casos Confirmados:</p>
-                  <a id="quartomortes">
-                    <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                  </a>
-                  <p class="card-text">Mortes:</p>
-                    <a id="quartoletal">
-                    <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                  </a>
-                  <p class="card-text">Letalidade:</p>                  
-              </div>
-          </div>
-
-          </div>
-        </div>
-      </div>
-
-  <!--  segunda linha -->
-  <div id='linhacard' class="row mt-3 mb-3">
-    <div class="col">
-      <div class="card-deck">
-           <div class="card border-warning">
-              <div class="card-body">
-                <p id="quinto" class="card-title">quinto</p>
-                <a id="quintocasos">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Casos Confirmados:</p>
-                <a id="quintomortes">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Mortes:</p>
-                  <a id="quintoletal">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Letalidade:</p>                  
-              </div>
-            </div>
-
-            <div class="card border-danger">
-              <div class="card-body">
-                <p id="sexto" class="card-title">sexto</p>
-                <a id="sextocasos">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Casos Confirmados:</p>
-                <a id="sextomortes">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Mortes:</p>
-                  <a id="sextoletal">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Letalidade:</p>                  
-              </div>
-            </div>
-
-            <div class="card border-dark">
-              <div class="card-body">
-                <p id="setimo" class="card-title">setimo</p>
-                <a id="setimocasos">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Casos Confirmados:</p>
-                <a id="setimomortes">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Mortes:</p>
-                  <a id="setimoletal">
-                  <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                </a>
-                <p class="card-text">Letalidade:</p>                  
-              </div>
-            </div>
-            
-            <div class="card border-info">
-              <div class="card-body">
-                  <p id="oitavo" class="card-title">oitavo</p>
-                  <a id="oitavocasos">
-                    <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                  </a>
-                  <p class="card-text">Casos Confirmados:</p>
-                  <a id="oitavomortes">
-                    <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                  </a>
-                  <p class="card-text">Mortes:</p>
-                    <a id="oitavoletal">
-                    <div class="spinner-grow spinner-grow-sm float-right text-primary" role="status"><span class="sr-only">Loading...</span> </div> 
-                  </a>
-                  <p class="card-text">Letalidade:</p>                  
-              </div>
-          </div>
-                 
-           
-      </div>
-    </div>
-</div>
-
-<!-- Graficos -->
-    <div class="wrapper">
-        <div id="tester1" style="width:840px;height:450px;"></div>
-    </div>
-<!--
-<a>         OBS: Estados Unidos removido, pois a distancia entre o numero de casos atrapalharia a visualizacao dos dados. </a> -->
-  
-   
-</hr>
-</body>
-<!-- footer -->
-<footer>
-  <div class="container">
-  <ul>
-    <a> Desenvolvimento: </a>
-    <a href="https://github.com/MarcsonAz">MarcsonAz</a>
-    <br>
-    <a> Fonte dos dados: </a>
-    <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#6fbc46d6-0ddf-400b-a743-a149e9bba381"> Coronavirus COVID19 API </a>
-  </ul>
-
-  </div>
-        
-</footer>
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Let's Socialize</h3>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://ca.linkedin.com/in/hassan-ali-6132468a"><img class="" src="assets/img/linkedin.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.facebook.com/Hassan.Helfi"><img class="" src="assets/img/facebook.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<a href="http://www.hassanali.me/about">Hassan Ali</a>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
 </html>
