@@ -1,4 +1,4 @@
-## Portfólio pessoal em contrução :hammer: :nut_and_bolt:	:wrench:
+## Portfólio pessoal em contrução :hammer::nut_and_bolt::wrench:
 
 
 #### TEMPLATE FROM
