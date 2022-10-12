@@ -1,8 +1,8 @@
-### Portfólio pessoal em contrução :brick:
+## Portfólio pessoal em contrução :hammer: :nut_and_bolt:	:wrench:
 
 
-### TEMPLATE FROM
-#### Studorlio
+#### TEMPLATE FROM
+##### Studorlio
 
 Studorlio is a template for your own personal site. You can have yours running on the cloud in exactly 10 seconds. But first, make sure you have a GitHub account. Ready, set, go!
 
