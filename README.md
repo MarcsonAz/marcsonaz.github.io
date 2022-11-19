@@ -1,7 +1,7 @@
 ## Portfólio pessoal
 #### em contrução :hammer::nut_and_bolt::wrench:
 
-&rarr; [Portfólio](https://marcsonaz.github.io/) &larr;
+ &rarr; &rarr; &rarr; [Acesse o portfólio](https://marcsonaz.github.io/) &larr; &larr; &larr;
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/MarcsonAz/marcsonaz.github.io)
