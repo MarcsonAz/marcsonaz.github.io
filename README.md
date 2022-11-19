@@ -1,12 +1,22 @@
-## Portfólio pessoal em contrução :hammer::nut_and_bolt::wrench:
+## Portfólio pessoal
+#### em contrução :hammer::nut_and_bolt::wrench:
 
+Visite: ![page](https://marcsonaz.github.io/)
+<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-#### TEMPLATE FROM
-##### Studorlio
+![GitHub repo size](https://img.shields.io/github/repo-size/MarcsonAz/marcsonaz.github.io)
+![GitHub language count](https://img.shields.io/github/languages/count/MarcsonAz/marcsonaz.github.io)
+![GitHub forks](https://img.shields.io/github/forks/MarcsonAz/marcsonaz.github.io)
 
-Studorlio is a template for your own personal site. You can have yours running on the cloud in exactly 10 seconds. But first, make sure you have a GitHub account. Ready, set, go!
+### Ajustes e melhorias
 
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-## License
-Code released under the [MIT](https://github.com/helfi92/studorlio/blob/master/LICENSE) license
+- [x] Organizar todas as subpáginas neste repositório principal
+- [ ]  
 
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+[⬆ Voltar ao topo](##Portfolio-pessoal)<br>
