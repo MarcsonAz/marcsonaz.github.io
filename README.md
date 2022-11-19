@@ -1,7 +1,7 @@
 ## Portfólio pessoal
 #### em contrução :hammer::nut_and_bolt::wrench:
 
-Visite: ![page](https://marcsonaz.github.io/)
+[Visite:](https://marcsonaz.github.io/)
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/MarcsonAz/marcsonaz.github.io)
@@ -13,10 +13,8 @@ Visite: ![page](https://marcsonaz.github.io/)
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Organizar todas as subpáginas neste repositório principal
-- [ ]  
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+![LIC](https://img.shields.io/github/license/MarcsonAz/marcsonaz.github.io)
 
-[⬆ Voltar ao topo](##Portfolio-pessoal)<br>
