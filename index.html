@@ -2,15 +2,20 @@
 <html>
 <head>
 	<title>Marcson Azevedo</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<!-- css files -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
 	<link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15/svgs/solid/user.svg">
 	<meta name="author" content="Hassan Ali - Marcson Azevedo">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+
+
 	<!--
 	ajustes propostos ---
 
@@ -37,139 +42,145 @@
 </head>
 	<body>
 		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
-				<!--
-				<a href="http://medium.com/@hassanhelfi/" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-medium"></i>
-					</span>
-				</a>
-                                -->
-							
-				<a href="https://github.com/MarcsonAz" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>
-				<a href="https://twitter.com/azmarcson" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-twitter"></i>
-					</span>
-				</a>
-				<a href="https://www.linkedin.com/in/marcsonazevedo/" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-linkedin"></i>
-					</span>
-				</a>
-				<a class="nav-item">
-					<span class="icon has-text">
-						<i class="fa fa-warning"></i> 
-					</span>
-				</a>
-				<a class="nav-item">
-					Página em construção
-				</a>
-				
-				
-			</div>
+		<nav class="navbar is-dark">
+			<div class="container">
+				<!-- Logo (if needed) -->
+				<!-- <div class="navbar-brand">
+					<a class="navbar-item" href="#">
+						<img src="logo.png" alt="Logo">
+					</a>
+				</div> -->
 
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#about">Sobre</a>
-				<a class="nav-item" href="#projects">Projetos</a>
-				<!-- <a class="nav-item" href="#social">Social</a> -->
-			</div>
+				<!-- Left side of the navbar -->
+				<div class="navbar-start">
+					<!-- Social icons -->
+					<a href="https://github.com/MarcsonAz" class="navbar-item">
+						<span class="icon">
+							<i class="fab fa-github"></i>
+						</span>
+					</a>
+					<a href="https://twitter.com/azmarcson" class="navbar-item">
+						<span class="icon">
+							<i class="fab fa-twitter"></i>
+						</span>
+					</a>
+					<a href="https://www.linkedin.com/in/marcsonazevedo/" class="navbar-item">
+						<span class="icon">
+							<i class="fab fa-linkedin"></i>
+						</span>
+					</a>
+					<!-- Under construction message -->
+					<div class="navbar-item has-text-danger" style="margin-left: 20px">
+						<span class="icon">
+							<i class="fas fa-exclamation-triangle"></i>
+						</span>
+						<span style="margin-left: 20px">Página em construção</span> 
+					</div>
+				</div>
 
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
+				<!-- Right side of the navbar -->
+				<div class="navbar-end">
+					<a class="navbar-item" href="#about">Sobre</a>
+					<a class="navbar-item" href="#projects">Projetos</a>
+					<!-- Add more menu items as needed -->
+				</div>
+
+				<!-- Hamburger menu for mobile -->
+				<span class="navbar-burger burger" data-target="navbarMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
 		</nav>
-				
+
 		<!-- About Me -->
-		<section id="about" class="section section-1">
-			<div class="container has-text-centered">
-				<img class="avatar" src="assets/img/profile.png">
-			</div></br>
+		<section class="section section-1">
 			<div class="container">
-				<p> 
-					Sobre 
-				</p>
-				<p class="intro">
-					Carioca, estatístico, pesquisador social, palestrinha, canceriano, curte a família, bons filmes, esportes, lolzinho, cervejinha, músicas e ouvir novas histórias!
-				</p>
-				<br>
-				<p class="intro">
-					Contato principal : <span> marcsonazevedo@gmail.com </span> 
-				</p>
-			</div></br>
-			<div class="container">
-				<div>
-					
-					<p class="intro">
-						Na vida de pesquisador social iniciada no fim de 2018 em um estágio durante a graduação, conheci diversos pesquisadores das mais diversas áreas, trabalhei mais com economistas, cientistas políticos e demográfos, mas a multidisciplinariedade é real na pesquisa. 
-						Hoje tenho experiência na construção de indicadores e modelos estatísticos para compreensão de fenômenos sociais.
-						Minhas pesquisas são mais voltadas para resultados de Mercado de Trabalho e construçaõ de indicadores sociais. 
-						Entre a realização dos projetos, com artigos e trabalhos, usando dados de Mercado de Trabalho, Educação, Saúde e outros mais, aprendi com parceiros habilidades de comunicação e solução de problemas, ao identificar dentro das atividades algumas oportunidades de evoluir em gestão do tempo e trabalho em equipe, saber lidar com a pressão e aprender a se adaptar as situações.
-						Se tratando de habilidades técnicas, ao participar de projetos com R, SQL e Python, desenvolvi uma capacidade muito grande de realizar análises de dados em relatórios com linguagens de programação e em menor escala por meio de relatórios dinâmicos com softwares como Tableau e o PowerBI.
-						
-					</p>
-					
-					<p class="intro">
-						Detalhando melhor os caminhos traçados, no estágio durante a graduação, tive a oportunidade de aprender com uma equipe de altíssimo nível dentro da Diretoria de Pesquisa do IBGE. 
-					A equipe da COPIS tem uma grande publicação anual chamada Síntese de Indicadores Sociais e mais diversas publicações que andam em paralelo para alimentar a discussão sobre indicadores sociais no País, inclusive uma que fiz parte o Panorama nacional e internacional da produção de indicadores sociais : estatísticas de governança.
-					Lá atuava na análise de dados e construção de tabelas sobre indicadores sociais de pesquisas geradas pelo próprio Instituto como a PNADC, PNS, PeNSE, ESTADIC, MUNIC, entre outras.
-					Na parte de análise, tive a oportunidade de apresentar resultados sobre a situação da informalidade e buscar características da população nesta forma de trabalho.
-					</p>
-				</div></br>
-				<div>
-					<p class="intro">
-						Com isso, avancei muito no tema e tratei logo de montar um projeto que seria a introdução da Monografia que utilizei para a conclusão do Curso de Bacharel em Estatística na Universidade Federal Fluminense - UFF
-					</p>
-				</div></br>
-				<div>
-					<p class="intro">
-						No fim da Graduação, em 2021, entrei como estagiário no <a href="https://imdsbrasil.org/">Imds</a>, um novo Instituto de pesquisa com foco em Mobilidade Social, fundado por economistas de renome, Paulo Tafner e Armínio Fraga. Rapidamente me envolvi com os projetos e mesmo em meus primeiros meses pude conduzir a produção de indicadores para um projeto envolvendo a pesquisa experimental PNAD COVID-19.
-					Segui como pesquisador no Imds até 2023, participei da equipe técnica da Diretoria de Pesquisa apoiando na produção de evidências para os projetos. Na prática, realizava coletas e tratamentos de microdados, dados primários e pesquisas administrativas públicas de acesso livre ou restrito (com identificação). Contribuí para o tratamento dos dados e preparo de análises para a equipe de pesquisadores do Instituto ou outros parceiros externos.				
-					Tive muitos dias de trabalho no Rstudio, Vscode(python), Excel(tabela dinâmica e gráficos), Powerpoint, PowerBI e Tableau. Mas também precisei organizar dados armazenados no MongoDB, coletar arquivos com o FileZilla, entender HTML, CSS e JS para fazer scrape.
-					Multitarefa como qualquer pesquisador social, eu ainda busco me atualizar quanto a literatura de pesquisa social e de políticas públicas, pois não é somente com métodos que são feitas as pesquisas. Me atualizo pela participação em palestras e nas leituras de artigos e livros recomendados por meus colegas e pesquisadores que acompanho.
-					</p>
-				</div></br>
-				<div>
-					<p class="intro">
-						Em 2023 entrei em uma nova fase da minha carreira de pesquisador, iniciei na pós-graduação, Mestrado em População, Território e Estatísticas públicas na ENCE. Pretendo desenvolver uma pesquisa que para evoluir meus conhecimentos de população e melhor estimar condições socioecônomicas ligadas aos mercado de trabalho informal.
-						E no trabalho, entrei para a equipe de analise de dados da Diretoria de Estudos e Políticas do Estado do IPEA como Bolsista, a propsta é realizar atividades em uma Instituição de renome e que permite espaço para realizar minhas pesquisas.
-						Sigo no Mercado de trabalho, porém, desta vez, compreendendo a distribuição de vínculos e salários dentro do Governo com os registros da RAIS.
-					</p>
-				</div></br>
-
-				<div>
-					<p class="intro">
-						Atlas do Estado Brasileiro - IPEA
-						<a href="https://www.ipea.gov.br/atlasestado/">Págnia de divulgação de resultados do projeto.</a>
-					</p>
-					<p class="intro">
-						Projeto de desenvolvimento Web. Coleta de dados dinâmica de uma API, tratmento, preparação de resultados e montagens de cards e gráficos para mostrar os resultados.
-						<a href="https://marcsonaz.github.io/markstats.github.io/">Painel COVID-19</a>
-					</p>
-					<p class="intro">
-						Página onde compartilho meus projetos do R. <a href="https://rpubs.com/azevedom">Página Rpubs</a>
-					</p>
-					<p class="intro">
-						Página onde compartilho meus projetos do Tableau. <a href="https://public.tableau.com/app/profile/marcson">Página Tableau Public</a>
-					</p>
-					
-				</div></br>
-
-				
-		
+				<div class="columns">
+					<!-- Left column for the image -->
+					<div class="column is-one-third">
+						<img class="avatar" src="assets/img/profile.png" alt="Profile Picture">
+					</div>
+					<!-- Right column for the text -->
+					<div class="column is-two-thirds">
+						<div>
+							<p class="intro">
+								Carioca, estatístico, pesquisador social, palestrinha, canceriano, curte a família, bons filmes, esportes, lolzinho, cervejinha, músicas e ouvir novas histórias!
+							</p> </br>
+							<p class="intro">
+								Contato principal : <span> marcsonazevedo@gmail.com </span> 
+							</p>
+						</div>
+					</div>
+				</div>	
+				<div id="about" class="columns">
+					<div class="column">
+						<div class="has-text-centered">
+						</br>
+							<p class="intro">
+								Sobre
+							</p>
+							<p class="intro">
+								Na vida de pesquisador social iniciada no fim de 2018 em um estágio durante a graduação, conheci diversos pesquisadores das mais diversas áreas, trabalhei mais com economistas, cientistas políticos e demográfos, mas a multidisciplinariedade é real na pesquisa. 
+								Hoje tenho experiência na construção de indicadores e modelos estatísticos para compreensão de fenômenos sociais.
+								Minhas pesquisas são mais voltadas para resultados de Mercado de Trabalho e construçaõ de indicadores sociais. 
+								Entre a realização dos projetos, com artigos e trabalhos, usando dados de Mercado de Trabalho, Educação, Saúde e outros mais, aprendi com parceiros habilidades de comunicação e solução de problemas, ao identificar dentro das atividades algumas oportunidades de evoluir em gestão do tempo e trabalho em equipe, saber lidar com a pressão e aprender a se adaptar as situações.
+								Se tratando de habilidades técnicas, ao participar de projetos com R, SQL e Python, desenvolvi uma capacidade muito grande de realizar análises de dados em relatórios com linguagens de programação e em menor escala por meio de relatórios dinâmicos com softwares como Tableau e o PowerBI.
+							</p>
+							
+							<p class="intro">
+								Detalhando melhor os caminhos traçados, no estágio durante a graduação, tive a oportunidade de aprender com uma equipe de altíssimo nível dentro da Diretoria de Pesquisa do IBGE. 
+								A equipe da COPIS tem uma grande publicação anual chamada Síntese de Indicadores Sociais e mais diversas publicações que andam em paralelo para alimentar a discussão sobre indicadores sociais no País, inclusive uma que fiz parte o Panorama nacional e internacional da produção de indicadores sociais : estatísticas de governança.
+								Lá atuava na análise de dados e construção de tabelas sobre indicadores sociais de pesquisas geradas pelo próprio Instituto como a PNADC, PNS, PeNSE, ESTADIC, MUNIC, entre outras.
+								Na parte de análise, tive a oportunidade de apresentar resultados sobre a situação da informalidade e buscar características da população nesta forma de trabalho.
+							</p>
+						</div>
+						</br>
+						<div class="has-text-centered">
+							<p class="intro">
+								Com isso, avancei muito no tema e tratei logo de montar um projeto que seria a introdução da Monografia que utilizei para a conclusão do Curso de Bacharel em Estatística na Universidade Federal Fluminense - UFF
+							</p>
+						</div>
+						</br>
+						<div class="has-text-centered">
+							<p class="intro">
+								No fim da Graduação, em 2021, entrei como estagiário no <a href="https://imdsbrasil.org/">Imds</a>, um novo Instituto de pesquisa com foco em Mobilidade Social, fundado por economistas de renome, Paulo Tafner e Armínio Fraga. Rapidamente me envolvi com os projetos e mesmo em meus primeiros meses pude conduzir a produção de indicadores para um projeto envolvendo a pesquisa experimental PNAD COVID-19.
+							Segui como pesquisador no Imds até 2023, participei da equipe técnica da Diretoria de Pesquisa apoiando na produção de evidências para os projetos. Na prática, realizava coletas e tratamentos de microdados, dados primários e pesquisas administrativas públicas de acesso livre ou restrito (com identificação). Contribuí para o tratamento dos dados e preparo de análises para a equipe de pesquisadores do Instituto ou outros parceiros externos.				
+							Tive muitos dias de trabalho no Rstudio, Vscode(python), Excel(tabela dinâmica e gráficos), Powerpoint, PowerBI e Tableau. Mas também precisei organizar dados armazenados no MongoDB, coletar arquivos com o FileZilla, entender HTML, CSS e JS para fazer scrape.
+							Multitarefa como qualquer pesquisador social, eu ainda busco me atualizar quanto a literatura de pesquisa social e de políticas públicas, pois não é somente com métodos que são feitas as pesquisas. Me atualizo pela participação em palestras e nas leituras de artigos e livros recomendados por meus colegas e pesquisadores que acompanho.
+							</p>
+						</div></br>
+						<div class="has-text-centered">
+							<p class="intro">
+								Em 2023 entrei em uma nova fase da minha carreira de pesquisador, iniciei na pós-graduação, Mestrado em População, Território e Estatísticas públicas na ENCE. Pretendo desenvolver uma pesquisa que para evoluir meus conhecimentos de população e melhor estimar condições socioecônomicas ligadas aos mercado de trabalho informal.
+								E no trabalho, entrei para a equipe de analise de dados da Diretoria de Estudos e Políticas do Estado do IPEA como Bolsista, a propsta é realizar atividades em uma Instituição de renome e que permite espaço para realizar minhas pesquisas.
+								Sigo no Mercado de trabalho, porém, desta vez, compreendendo a distribuição de vínculos e salários dentro do Governo com os registros da RAIS.
+							</p>
+						</div></br>
+						<div class="has-text-centered">
+							<p class="intro">
+								Atlas do Estado Brasileiro - IPEA
+								<a href="https://www.ipea.gov.br/atlasestado/">Págnia de divulgação de resultados do projeto.</a>
+							</p>
+							<p class="intro">
+								Projeto de desenvolvimento Web. Coleta de dados dinâmica de uma API, tratmento, preparação de resultados e montagens de cards e gráficos para mostrar os resultados.
+								<a href="https://marcsonaz.github.io/markstats.github.io/">Painel COVID-19</a>
+							</p>
+							<p class="intro">
+								Página onde compartilho meus projetos do R. <a href="https://rpubs.com/azevedom">Página Rpubs</a>
+							</p>
+							<p class="intro">
+								Página onde compartilho meus projetos do Tableau. <a href="https://public.tableau.com/app/profile/marcson">Página Tableau Public</a>
+							</p>
+							
+						</div></br>
+					</div>
+				</div>
 			</div>
 		</section>
+		
+		
 		
 		<!-- Projects -->
 		<section  id="projects" class="section section-2">
