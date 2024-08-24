@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Marcson Azevedo</title>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<head>
+		<title>Marcson Azevedo</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-	<!-- css files -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+		<!-- css files -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-	<link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15/svgs/solid/user.svg">
-	<meta name="author" content="Hassan Ali - Marcson Azevedo">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+		<link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15/svgs/solid/user.svg">
+		<meta name="author" content="Hassan Ali - Marcson Azevedo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			/* Estilo personalizado para reduzir o tamanho da imagem */
+			.image img {
+				width: 50%; /* Reduz a imagem para 50% do seu tamanho original */
+				display: block; /* Garante que o margin-right funcione corretamente */
+				margin: 0 auto; /* Alinha a imagem à direita dentro do figure */
+			}
 
+			/* Estilo personalizado para o parágrafo */
+			.column.is-half p {
+				margin-right: 0; /* Remove qualquer margem à direita */
+				margin-left: 0; /* Remove qualquer margem à esquerda */
+				padding-left: 0; /* Remove qualquer preenchimento à esquerda */
+			}
+		</style>
+		
+	</head>
 
-	<!--
-	ajustes propostos ---
-
-	remover a parte de socials - trazer para o inicio com esses icons com os meus outros links
-	talvez colocar emails e um telefone no site
-	esta sem o rodapé - o antigo tinha um link para site de contato do desenvolvedor
-	pensando em colocar fim fim que foi desenvolvido com amor pelo hassam
-	Projeto 1
-	 link livro: https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101660).
-	colocar pdf em site?? Diploma, livro ibge, ppt covid, colocar links dos dashboards
-	colocar imagens dos arquivos
-	colocar fotos: fundo twitter, do ibge, dos dashboards, de notícias
-	trazer o ppt de informalidade
-	trazer a minha monografia
-	
-	<div class="icon-text">
-	  <span class="icon has-text-warning">
-	    <i class="fas fa-exclamation-triangle"></i>
-	  </span>
-	  <span>Warning</span>
-	</div>
-	-->
-	
-</head>
 	<body>
 		<!-- Navbar -->
 		<nav class="navbar is-dark">
@@ -97,27 +89,61 @@
 		<!-- About Me -->
 		<section class="section section-1">
 			<div class="container">
-				<div class="columns">
-					<!-- Left column for the image -->
-					<div class="column is-one-third">
-						<img class="avatar" src="assets/img/profile.png" alt="Profile Picture">
+				<div class="columns is-vcentered">
+					<!-- Left column for the image is-one-third-->
+					<div class="column is-half">
+						<figure class="image">
+							<img class="avatar" src="assets/img/profile.png" alt="Profile Picture">
+						</figure>
 					</div>
 					<!-- Right column for the text -->
-					<div class="column is-two-thirds">
-						<div>
+					<div class="column is-half">
 							<p class="intro">
 								Carioca, estatístico, pesquisador social, palestrinha, canceriano, curte a família, bons filmes, esportes, lolzinho, cervejinha, músicas e ouvir novas histórias!
 							</p> </br>
 							<p class="intro">
 								Contato principal : <span> marcsonazevedo@gmail.com </span> 
 							</p>
-						</div>
 					</div>
 				</div>	
-				<div id="about" class="columns">
+				<div class="columns">
 					<div class="column">
 						<div class="has-text-centered">
 						</br>
+
+						<div class="has-text-centered">
+							<p class="intro">
+								Projetos recentes
+							</p>
+
+							<p class="intro">
+								Atlas do Estado Brasileiro - IPEA
+								<a href="https://www.ipea.gov.br/atlasestado/">Págnia de divulgação de resultados do projeto.</a>
+							</p>
+							<p class="intro">
+								Projeto de desenvolvimento Web. Coleta de dados dinâmica de uma API, tratmento, preparação de resultados e montagens de cards e gráficos para mostrar os resultados.
+								<a href="https://marcsonaz.github.io/markstats.github.io/">Painel COVID-19</a>
+							</p>
+							<p class="intro">
+								Página onde compartilho meus projetos do R. <a href="https://rpubs.com/azevedom">Página Rpubs</a>
+							</p>
+							<p class="intro">
+								Página onde compartilho meus projetos do Tableau. <a href="https://public.tableau.com/app/profile/marcson">Página Tableau Public</a>
+							</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container">
+				<div class="columns is-vcentered">
+						<div id="about" class="columns">
+							<div class="column">
+								<div class="has-text-centered">
 							<p class="intro">
 								Sobre
 							</p>
@@ -158,23 +184,7 @@
 								Sigo no Mercado de trabalho, porém, desta vez, compreendendo a distribuição de vínculos e salários dentro do Governo com os registros da RAIS.
 							</p>
 						</div></br>
-						<div class="has-text-centered">
-							<p class="intro">
-								Atlas do Estado Brasileiro - IPEA
-								<a href="https://www.ipea.gov.br/atlasestado/">Págnia de divulgação de resultados do projeto.</a>
-							</p>
-							<p class="intro">
-								Projeto de desenvolvimento Web. Coleta de dados dinâmica de uma API, tratmento, preparação de resultados e montagens de cards e gráficos para mostrar os resultados.
-								<a href="https://marcsonaz.github.io/markstats.github.io/">Painel COVID-19</a>
-							</p>
-							<p class="intro">
-								Página onde compartilho meus projetos do R. <a href="https://rpubs.com/azevedom">Página Rpubs</a>
-							</p>
-							<p class="intro">
-								Página onde compartilho meus projetos do Tableau. <a href="https://public.tableau.com/app/profile/marcson">Página Tableau Public</a>
-							</p>
-							
-						</div></br>
+						
 					</div>
 				</div>
 			</div>
