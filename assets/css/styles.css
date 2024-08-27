@@ -88,6 +88,37 @@ a.nav-item:hover {
 	background-color: transparent; 
 }
 
+/* Estilo personalizado para reduzir o tamanho da imagem */
+.image img {
+	width: 50%; /* Reduz a imagem para 50% do seu tamanho original */
+	display: block; /* Garante que o margin-right funcione corretamente */
+	margin: 0 auto; /* Alinha a imagem à direita dentro do figure */
+}
+  
+  /* Estilo personalizado para o parágrafo */
+.column.is-half p {
+	margin-right: 0; /* Remove qualquer margem à direita */
+	margin-left: 0; /* Remove qualquer margem à esquerda */
+	padding-left: 0; /* Remove qualquer preenchimento à esquerda */
+}
+.section-1 {
+	background-color: #D0B998; /* Light blue */
+	color: black; /* Text color */
+	border-bottom: 2px solid #8B4513; /* Dark brown bottom border */
+}
+.section-2 {
+	background-color: #b19b7d; /* less Light blue */
+	color: black; /* Text color */
+}
+  
+section a {
+	color:#0b35be;
+}
+  
+.section a:hover {
+	color: #4f95ff; /* Hover color for links */
+}
+
 @media screen and (max-width: 768px) {
 	.nav-menu {
 		background-color: #063647;
