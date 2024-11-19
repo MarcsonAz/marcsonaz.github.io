@@ -73,7 +73,7 @@ a.nav-item:hover {
 }
 
 .title {
-	color: #fff;
+	color: #000;
 	text-align: left;
 	margin-bottom: 2rem;
 }
@@ -102,12 +102,12 @@ a.nav-item:hover {
 	padding-left: 0; /* Remove qualquer preenchimento à esquerda */
 }
 .section-1 {
-	background-color: #D0B998; /* Light blue */
+	background-color: #72BDA3; /* Light blue */
 	color: black; /* Text color */
-	border-bottom: 2px solid #8B4513; /* Dark brown bottom border */
+	border-bottom: 2px solid #8E8358; /* Dark brown bottom border */
 }
 .section-2 {
-	background-color: #b19b7d; /* less Light blue */
+	background-color: #EAFDCF; /* less Light blue */ 
 	color: black; /* Text color */
 }
   
