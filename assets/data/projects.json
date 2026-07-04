@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Saída e permanência no CadÚnico: uma análise dos beneficiários de 2005 do PBF",
+    "image": "assets/img/projeto1.png",
+    "link": "https://imdsbrasil.org/saida-e-permanencia-no-cadunico-uma-analise-dos-beneficiarios-de-2005-do-pbf",
+    "description": "Análise de microdados das primeiras gerações do Bolsa Família com indicadores de saída do Cadastro único, o material conta com a caracterização das populações. O trabalho foi feito no nível de municípios brasileiros. Novas pesquisas estão sendo produzidas com dados da RAIS para identificar a aquisição de emprego formal por parte dos antigos benficiários."
+  },
+  {
+    "id": 2,
+    "title": "Retratos das Crianças e jovens na pandemia: educação",
+    "image": "assets/img/projeto2.png",
+    "link": "https://imdsbrasil.org/apresentacao-detalhe",
+    "description": "Análise de dados de educação da pesquisa experimental em painel realizada pelo IBGE no ínicio da pandemia de COVID-19 em 2020. Os dados buscam caracterizar a populaçaõs com diferentes indicadores de condição social dado a realidade das condições de educação vividas por cada subgrupo."
+  },
+  {
+    "id": 3,
+    "title": "Panorama nacional e internacional da produção de indicadores sociais : estatísticas de governança",
+    "image": "assets/img/projeto3.png",
+    "link": "https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2101660",
+    "description": "Publicação do IBGE qual participei analisando dados das Unidades da Federação e de municípios brasileiros identificando dispositivos de saúde, assistência, educação e cultura."
+  },
+  {
+    "id": 4,
+    "title": "Avaliação da pobreza na Região Metropolitana do Rio de Janeiro e o efeito da formalidade entre os ocupados",
+    "image": "assets/img/projeto4.png",
+    "link": "http://estatistica.uff.br/wp-content/uploads/sites/33/2022/02/tcc_20212_MarcsonDeAzevedoAraujo_216054078.pdf",
+    "description": "Monografia TCC (PDF). O presente trabalho busca observar fatores de indivíduos e de seus domicílios associados a condição de pobreza monetária na Região Metropolitana do Rio de Janeiro no último trimestre de 2012, 2016 e 2020. É encontrada redução da chance de ser pobre em um domicílio com ocupados no mercado formal em relação a domicílios com informais."
+  },
+  {
+    "id": 5,
+    "title": "Ipea - Atlas do Estado Brasileiro",
+    "image": "assets/img/home_atlas.png",
+    "link": "https://www.ipea.gov.br/atlasestado/",
+    "description": "Portal do Ipea para divulgar dados do funcionalismo público"
+  }
+]
