@@ -1,0 +1,44 @@
+[
+  {
+    "name": "MARCSONAZ",
+    "description": "Descrição não disponível.",
+    "language": "Diversos",
+    "html_url": "https://github.com/MarcsonAz/MarcsonAz",
+    "homepage": null
+  },
+  {
+    "name": "MARCSONAZ.GITHUB.IO",
+    "description": "Training web dev",
+    "language": "JavaScript",
+    "html_url": "https://github.com/MarcsonAz/marcsonaz.github.io",
+    "homepage": null
+  },
+  {
+    "name": "RAG_TEST",
+    "description": "Teste para a produção de um RAG para o Léo Mello",
+    "language": "Python",
+    "html_url": "https://github.com/MarcsonAz/rag_test",
+    "homepage": null
+  },
+  {
+    "name": "PRODUTIVIDADE DIARIA",
+    "description": "Descrição não disponível.",
+    "language": "JavaScript",
+    "html_url": "https://github.com/MarcsonAz/produtividade-diaria",
+    "homepage": null
+  },
+  {
+    "name": "OFICINA_R_MACKRIO",
+    "description": "Material para o minicurso de R palestrado na Mackenzie Rio em 07/11/2025",
+    "language": "HTML",
+    "html_url": "https://github.com/MarcsonAz/oficina_r_mackrio",
+    "homepage": null
+  },
+  {
+    "name": "EXECUTIVO_ESTADUAL",
+    "description": "Códigos de produção de dados e relatórios com dados para iniciar o projeto de burocracias estaduais",
+    "language": "HTML",
+    "html_url": "https://github.com/MarcsonAz/executivo_estadual",
+    "homepage": null
+  }
+]
