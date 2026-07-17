@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- 1. Menu Mobile (Hamburger) ---
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 3. Carregar Projetos via Fetch API ---
     const projectsGrid = document.getElementById('projects-grid');
-    
+
     if (projectsGrid) {
         fetch('assets/data/projects.json')
             .then(response => {
@@ -43,6 +43,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectsGrid.innerHTML = '<p>Erro ao carregar a lista de projetos. Tente novamente mais tarde.</p>';
             });
     }
+
+    // 4 - Carregar repositórios do GitHub
+    const jsonUrl = 'assets/data/projetos-github.json';
+
+    const loadingElement = document.getElementById("projetos-loading");
+    const gridElement = document.getElementById("projetos-grid");
+
+    fetch(jsonUrl)
+        .then(response => {
+            if (!response.ok) throw new Error("Não foi possível carregar os dados locais.");
+            return response.json();
+        })
+        .then(projetos => {
+            gridElement.innerHTML = "";
+
+            projetos.forEach(repo => {
+                const card = document.createElement("div");
+                card.className = "projeto-card";
+
+                card.innerHTML = `
+                    <h3>${repo.name}</h3>
+                    <p>${repo.description}</p>
+                    <span class="linguagem-tag">${repo.language}</span>
+                    <div class="card-links">
+                        <a href="${repo.html_url}" target="_blank" rel="noopener">Ver Código</a>
+                        ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" rel="noopener">Live Demo</a>` : ''}
+                    </div>
+                `;
+
+                gridElement.appendChild(card);
+            });
+
+            loadingElement.style.display = "none";
+            gridElement.style.display = "grid";
+        })
+        .catch(error => {
+            console.error(error);
+            loadingElement.innerText = "Nenhum projeto encontrado no momento.";
+        });
+
 
     function renderProjects(projects) {
         // Limpar o grid
@@ -68,3 +108,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+

@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-    # Ignora mudanças no próprio arquivo projetos.json para evitar um loop infinito de commits
+    # Ignora mudanças no próprio arquivo projetos-github.json para evitar um loop infinito de commits
     paths-ignore:
-      - 'projetos.json'
+      - 'assets/data/projetos-github.json'
 
 jobs:
   update-json:
@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add projetos.json
-          # O comando abaixo verifica se houve alteração no projetos.json. 
-          # Se houver, ele faz o commit e o push de volta para a main.
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: atualiza projetos.json com repositórios recentes" && git push)
+          git add assets/data/projetos-github.json
+          # O comando abaixo verifica se houve alteração no projetos-github.json. 
+          # Se não houver, ele ignora. Se houver, faz o commit e o push.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: atualiza projetos-github.json com repositórios recentes" && git push)

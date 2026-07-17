@@ -27,12 +27,12 @@ async function fetchRepos() {
             homepage: repo.homepage
         }));
 
-        // Escreve os dados no arquivo projetos.json
-        fs.writeFileSync('projetos.json', JSON.stringify(portfolioData, null, 2));
-        console.log("Arquivo projetos.json gerado com sucesso!");
+        // Escreve os dados no arquivo assets/data/projetos-github.json
+        fs.writeFileSync('assets/data/projetos-github.json', JSON.stringify(portfolioData, null, 2));
+        console.log("Arquivo assets/data/projetos-github.json gerado com sucesso!");
 
     } catch (error) {
-        console.error("Erro ao gerar projetos.json:", error);
+        console.error("Erro ao gerar assets/data/projetos-github.json:", error);
         process.exit(1); // Encerra o script com erro para falhar a Action se algo der errado
     }
 }
