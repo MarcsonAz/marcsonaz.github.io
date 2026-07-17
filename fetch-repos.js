@@ -15,8 +15,12 @@ async function fetchRepos() {
 
         const data = await response.json();
 
-        // Filtra repositórios que não são forks e pega os 6 mais recentes
-        const projetosOriginais = data.filter(repo => !repo.fork).slice(0, 6);
+        // Filtra repositórios que não são forks ou de portfolio e pega os 6 mais recentes
+        const projetosOriginais = data.filter(repo => 
+            !repo.fork && 
+            repo.name.toLowerCase() !== "marcsonaz" && 
+            repo.name.toLowerCase() !== "marcsonaz.github.io"
+        ).slice(0, 6);
 
         // Mapeia apenas os dados necessários para o frontend ficar mais leve
         const portfolioData = projetosOriginais.map(repo => ({

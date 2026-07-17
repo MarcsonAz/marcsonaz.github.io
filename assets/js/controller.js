@@ -24,6 +24,32 @@ document.addEventListener('DOMContentLoaded', () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 
+    // --- 3. Copiar Email ---
+    const copyEmailBtn = document.getElementById('copy-email-btn');
+    const emailLink = document.getElementById('email-link');
+
+    const handleCopyEmail = (e) => {
+        if (e) e.preventDefault();
+        const email = 'marcsonazevedo@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+            if (copyEmailBtn) {
+                const originalIcon = copyEmailBtn.innerHTML;
+                copyEmailBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8E8358" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+                setTimeout(() => {
+                    copyEmailBtn.innerHTML = originalIcon;
+                }, 2000);
+            }
+        });
+    };
+
+    if (copyEmailBtn) {
+        copyEmailBtn.addEventListener('click', handleCopyEmail);
+    }
+    if (emailLink) {
+        emailLink.addEventListener('click', handleCopyEmail);
+    }
+
+
     // --- 3. Carregar Projetos via Fetch API ---
     const projectsGrid = document.getElementById('projects-grid');
 

@@ -54,10 +54,34 @@
                         grandes bases de dados administrativas para estruturar análises longitudinais e modelagens
                         complexas.
                     </p>
-                    <div class="contact-info">
-                        Contato principal: <a href="mailto:marcsonazevedo@gmail.com">marcsonazevedo@gmail.com</a>
+                    <div
+                        style="display: flex; gap: 3rem; flex-wrap: wrap; margin-bottom: 2rem; align-items: flex-start;">
+                        <div class="contact-info"
+                            style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: #b0b0b0;">
+                            <strong style="color: #2d2d2d;">Contato principal:</strong>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <a href="#" id="email-link" title="Copiar email">marcsonazevedo@gmail.com</a>
+                                <button id="copy-email-btn" class="copy-btn" title="Copiar email"
+                                    aria-label="Copiar email">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-copy">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            style="font-size: 0.9rem; color: #b0b0b0; display: flex; flex-direction: column; gap: 6px;">
+                            <strong style="color: #2d2d2d;">Atividades atuais:</strong>
+                            <a href="https://www.ipea.gov.br" target="_blank">Ipea - Assistente de pesquisa - 2023 -
+                                Presente</a>
+                            <a href="https://www.gov.br/ans/pt-br" target="_blank">ANS - Técnico temporário - 2026 -
+                                Presente</a>
+                        </div>
                     </div>
-                    <div class="hero-links">
+                    <div class="hero-links" style="font-size: 0.9rem; color: #b0b0b0;">
                         <h3>Projetos Recentes</h3>
                         <ul>
                             <li><a href="https://www.ipea.gov.br/atlasestado/" target="_blank">Atlas do Estado
@@ -78,12 +102,13 @@
             <div class="container">
                 <article>
                     <p>
-                        Pesquisador Social e Estatístico com forte atuação na análise quantitativa da força de trabalho
-                        do setor público e do mercado de trabalho brasileiro. Aplico técnicas avançadas de estatística,
-                        decomposição e análise longitudinal estruturadas em R e Python para dissecar grandes volumes de
-                        dados administrativos. O objetivo do meu trabalho é gerar evidências concretas que possibilitem
-                        a melhor compreensão da burocracia em diferentes níveis federativos, mapeando desde os
-                        servidores de base até a alta direção e os dirigentes governamentais.
+                        Mestre em População, Teritório e Estatísticas Públicas e Bacharel em Estatística com forte
+                        atuação na análise quantitativa da força de trabalho do setor público. Aplico técnicas de
+                        estatística, decomposição e análise longitudinal estruturadas em R e Python para dissecar
+                        grandes volumes de dados administrativos. O objetivo do meu trabalho é gerar evidências
+                        concretas que possibilitem a melhor compreensão da burocracia em diferentes níveis
+                        federativos, mapeando desde os servidores de base até a alta direção e os dirigentes
+                        governamentais.
                     </p>
                 </article>
 
@@ -142,20 +167,22 @@
         <hr class="about-divider" style="margin: 3rem 0; border: 0; border-top: 1px solid var(--accent); opacity: 0.3;">
 
         <section id="projetos-recentes">
-            <h3 class="about-article">Projetos recentes</h3>
+            <div class="container">
+                <h3 class="about-article">Projetos de código recentes</h3>
 
-            <!-- Estado de Loading -->
-            <div id="projetos-loading" class="loading-spinner">
-                Buscando projetos no GitHub...
+                <!-- Estado de Loading -->
+                <div id="projetos-loading" class="loading-spinner">
+                    Buscando projetos no GitHub...
+                </div>
+
+                <!-- Container onde os cards serão injetados -->
+                <div id="projetos-grid" class="grid-container" style="display: none;"></div>
             </div>
-
-            <!-- Container onde os cards serão injetados -->
-            <div id="projetos-grid" class="grid-container" style="display: none;"></div>
         </section>
 
         <section class="projects-section" id="projects">
             <div class="container">
-                <h2>Projetos</h2>
+                <h3 class="about-article">Projetos com produção textual</h3>
                 <!-- Projetos injetados via JS -->
                 <div class="projects-grid" id="projects-grid"></div>
             </div>

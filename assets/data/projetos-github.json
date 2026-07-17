@@ -1,19 +1,5 @@
 [
   {
-    "name": "MARCSONAZ.GITHUB.IO",
-    "description": "Training web dev",
-    "language": "JavaScript",
-    "html_url": "https://github.com/MarcsonAz/marcsonaz.github.io",
-    "homepage": null
-  },
-  {
-    "name": "MARCSONAZ",
-    "description": "Descrição não disponível.",
-    "language": "Diversos",
-    "html_url": "https://github.com/MarcsonAz/MarcsonAz",
-    "homepage": null
-  },
-  {
     "name": "RAG_TEST",
     "description": "Teste para a produção de um RAG para o Léo Mello",
     "language": "Python",
@@ -39,6 +25,20 @@
     "description": "Códigos de produção de dados e relatórios com dados para iniciar o projeto de burocracias estaduais",
     "language": "HTML",
     "html_url": "https://github.com/MarcsonAz/executivo_estadual",
+    "homepage": null
+  },
+  {
+    "name": "PORTFOLIO_TASKS",
+    "description": "Descrição não disponível.",
+    "language": "Diversos",
+    "html_url": "https://github.com/MarcsonAz/portfolio_tasks",
+    "homepage": null
+  },
+  {
+    "name": "REM_SIAPE_DIST",
+    "description": "Descrição não disponível.",
+    "language": "HTML",
+    "html_url": "https://github.com/MarcsonAz/rem_siape_dist",
     "homepage": null
   }
 ]
