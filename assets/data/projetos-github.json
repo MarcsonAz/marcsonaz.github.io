@@ -1,16 +1,16 @@
 [
   {
-    "name": "MARCSONAZ",
-    "description": "Descrição não disponível.",
-    "language": "Diversos",
-    "html_url": "https://github.com/MarcsonAz/MarcsonAz",
-    "homepage": null
-  },
-  {
     "name": "MARCSONAZ.GITHUB.IO",
     "description": "Training web dev",
     "language": "JavaScript",
     "html_url": "https://github.com/MarcsonAz/marcsonaz.github.io",
+    "homepage": null
+  },
+  {
+    "name": "MARCSONAZ",
+    "description": "Descrição não disponível.",
+    "language": "Diversos",
+    "html_url": "https://github.com/MarcsonAz/MarcsonAz",
     "homepage": null
   },
   {
